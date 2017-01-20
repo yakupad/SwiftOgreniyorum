@@ -32,5 +32,21 @@ print("x = \(x) y = \(y) z = \(z)")
 toplam = x + y + z
 print("Değişkenlerin Toplamı : \(toplam)")
 
-//DİZİLER
+//DİZİLER birden fazla değer saklayabilen veri yapısıdır.
+//Dizi elemanları aynı türden olmak zorundadırlar.
+var sayidizi : [Int] = [3,5,7,8,6,21,78,89]
+var stringdizi : [String] = ["yakup","ad","swift","apple"]
+print(sayidizi)
+print(stringdizi)
+
+//dizi elemanlarını bu for döngüleri sayesinde alt alta yazdırıyoruz
+for i in sayidizi
+{
+    print(i)
+}
+for i in stringdizi
+{
+    print(i)
+}
+
 

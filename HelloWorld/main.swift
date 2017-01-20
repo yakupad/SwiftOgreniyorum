@@ -39,7 +39,7 @@ var stringdizi : [String] = ["yakup","ad","swift","apple"]
 print(sayidizi)
 print(stringdizi)
 
-//dizi elemanlarını bu for döngüleri sayesinde alt alta yazdırıyoruz
+//dizi elemanlarını bu for in döngüleri sayesinde alt alta yazdırıyoruz
 for i in sayidizi
 {
     print(i)
@@ -70,3 +70,66 @@ else
 
 }
 
+//FOR IN Döngüsü Yapısı
+for i in sayidizi
+{
+    print(i)
+}
+for i in stringdizi
+{
+    print(i)
+}
+
+//FOR Döngüsü Yapısı
+//for parametresine bir ilk değer atanır; ilk değer koşulu sağlıyorsa deyimler icra edilir, sonra parametre artım kadar arttırılır.
+//Bu işlem parametre değeri koşulu sağlamadığı anda biter ve for gövdesinin ({}) dışına çıkılır.
+
+var i : Int , fortoplam : Int = 0
+for i in 1...100
+{
+    fortoplam = fortoplam + i
+}
+print(fortoplam)
+
+//SWİTCH DEYİMİ
+//“Switch”deyimi, tek bir ifadenin değerine göre, sınırsız sayıda icra yolu belirleme imkanı tanıyan bir komuttur.
+
+var swn : Int = 7
+switch swn
+{
+    case 1:print("seçim 1")
+    case 2:print("secim 2")
+    case 3:print("secim 3")
+    default:print("secim default")
+}
+
+//WHİLE DÖNGÜSÜ
+//Önce ifade hesaplanır. İfade true (doğru) ise deyim icra edilir. 
+//Deyim icra edildikten sonra, programın kontrolü while deyiminin başına geçer ve işlem tekrarlanır. 
+//Yani ifade yeniden hesaplanarak sonucuna göre işlem yapılır. Bu işlem, ifadenin değeri false (yanlış) olana kadar sürer. 
+//Bu durumda program deyimi izleyen noktaya gider.
+var wf=1
+var wi=1
+while wi<=5
+{
+    wf=wf * wi
+    wi = wi + 1
+}
+print("5!=\(wf)")
+
+//DO-WHİLE Döngüsü
+//Önce do’nun {} sembolleri ile belirtilen gövdesine (body) herhangi bir kontrol yapmadan girilir; 
+//gövdedeki komutlar icra edilir. Gövde içindeki icra bitince while sözcüğünü izleyen koşul kontrol edilir. 
+//Koşul doğru ise kontrol geri döner ve gene do’nun gövdesi ile devam eder; 
+//koşul yanlış ise, sadece bu durumda, kontrol do-while yapısını izleyen komuta geçer ve oradan devam eder.
+var dwf=1
+var dwi=1
+repeat
+    
+{dwf=dwf * dwi
+    
+    dwi = dwi + 1
+    
+}while(dwi<=5)
+
+print("5!=\(dwf)")

@@ -49,4 +49,11 @@ for i in stringdizi
     print(i)
 }
 
-
+//SÖZLÜKLER
+//Sözlükler dizilerden farklı olarak veri ikililerinden oluşur.Anahtar(key), Veri(data)
+//Dizilerde olduğu gibi aynı tür verilere izin vermektedir. Hetorojen yapıya izin verilmemektedir.
+var sozluk:Dictionary<Int, String> = [27:"Gaziantep" , 34:"Istanbul" , 06:"Ankara" , 07:"Antalya"]
+for i in sozluk
+{
+    print(i)
+}

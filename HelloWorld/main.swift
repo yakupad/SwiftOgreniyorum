@@ -32,3 +32,5 @@ print("x = \(x) y = \(y) z = \(z)")
 toplam = x + y + z
 print("Değişkenlerin Toplamı : \(toplam)")
 
+//DİZİLER
+

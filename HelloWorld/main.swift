@@ -57,3 +57,16 @@ for i in sozluk
 {
     print(i)
 }
+
+//İF KOŞUL YAPISI
+var if1 : Int = 23 , if2 : Int = 34
+if if1 > if2
+{
+    print("if1 degiskeni: \(if1) if2 degiskeninden: \(if2) büyüktür.")
+}
+else
+{
+    print("if2 degiskeni: \(if2) if1 degiskeninden: \(if1) büyüktür.")
+
+}
+

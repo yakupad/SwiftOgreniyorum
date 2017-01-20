@@ -133,3 +133,19 @@ repeat
 }while(dwi<=5)
 
 print("5!=\(dwf)")
+
+//FONKSİYONLAR
+//Fonksiyonun gövdesi (body), {} sembolleri arasında yer alır. 
+//Burada, fonksiyon içindeki, sadece o fonksiyona özgü lokal değişkenler ve 
+//fonksiyonun yapması gereken işi gerçekleştirmek için gerekli komutlar yer alır.
+
+func ortalama (x:Int, y:Int, z:Int) -> Int {
+    return (x + y + z) / 3
+}
+
+print("3 4 5 sayılarının ortalaması: \(ortalama(x:3,y:4,z:5))")
+print("19 98 43 sayılarının ortalaması: \(ortalama(x:19,y:98,z:43))")
+print("30 45 53 sayılarının ortalaması: \(ortalama(x:30,y:45,z:53))")
+
+
+

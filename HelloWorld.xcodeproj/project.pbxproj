@@ -10,6 +10,23 @@
 		0A1462091E3282C9005391C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1462081E3282C9005391C7 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A1462401E332E22005391C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A14623B1E332E1F005391C7 /* MyFirstIOSProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A1462181E332E1E005391C7;
+			remoteInfo = MyFirstIOSProject;
+		};
+		0A1462421E332E22005391C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A14623B1E332E1F005391C7 /* MyFirstIOSProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A14622C1E332E1F005391C7;
+			remoteInfo = MyFirstIOSProjectTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		0A1462031E3282C9005391C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,6 +42,7 @@
 /* Begin PBXFileReference section */
 		0A1462051E3282C9005391C7 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1462081E3282C9005391C7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A14623B1E332E1F005391C7 /* MyFirstIOSProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyFirstIOSProject.xcodeproj; path = MyFirstIOSProject/MyFirstIOSProject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,7 @@
 		0A1461FC1E3282C9005391C7 = {
 			isa = PBXGroup;
 			children = (
+				0A14623B1E332E1F005391C7 /* MyFirstIOSProject.xcodeproj */,
 				0A1462071E3282C9005391C7 /* HelloWorld */,
 				0A1462061E3282C9005391C7 /* Products */,
 			);
@@ -60,6 +79,15 @@
 				0A1462081E3282C9005391C7 /* main.swift */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		0A14623C1E332E1F005391C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A1462411E332E22005391C7 /* MyFirstIOSProject.app */,
+				0A1462431E332E22005391C7 /* MyFirstIOSProjectTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,12 +137,35 @@
 			mainGroup = 0A1461FC1E3282C9005391C7;
 			productRefGroup = 0A1462061E3282C9005391C7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0A14623C1E332E1F005391C7 /* Products */;
+					ProjectRef = 0A14623B1E332E1F005391C7 /* MyFirstIOSProject.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0A1462041E3282C9005391C7 /* HelloWorld */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0A1462411E332E22005391C7 /* MyFirstIOSProject.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MyFirstIOSProject.app;
+			remoteRef = 0A1462401E332E22005391C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A1462431E332E22005391C7 /* MyFirstIOSProjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyFirstIOSProjectTests.xctest;
+			remoteRef = 0A1462421E332E22005391C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A1462011E3282C9005391C7 /* Sources */ = {
@@ -253,6 +304,7 @@
 				0A14620E1E3282C9005391C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

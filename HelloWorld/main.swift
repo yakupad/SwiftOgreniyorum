@@ -148,4 +148,68 @@ print("19 98 43 sayılarının ortalaması: \(ortalama(x:19,y:98,z:43))")
 print("30 45 53 sayılarının ortalaması: \(ortalama(x:30,y:45,z:53))")
 
 
+//CLASSlar NESNEler ve YAPIlar
+
+struct Daire //-->diyince yapı oluşturmuş oluyoruz
+//class Daire --> Class diyince sınıf oluşturmuş oluyoruz
+{
+    var r:Double
+    init (yc:Double)
+    {
+        r=yc
+    }
+    func cevre()->Double
+    {
+        return 2*3.14159 * r
+    }
+    func alan()->Double
+    {
+        return 3.14159 * r * r
+    }
+}
+
+var dd=Daire(yc:4.00)
+print ("Dairenin Yariçapı: \(dd.r)")
+print ("Dairenin Çevresi: \(dd.cevre())")
+print("Dairenin Alanı: \(dd.alan())")
+
+
+//SAYMA TİPİ (ENUMARATİON)
+enum Kitalar
+{
+    case Amerika
+    case Asya
+    case Afrika
+    case Avustralya
+    case Antarktika
+    case Avrupa
+}
+let xxxx=Kitalar.Asya
+
+switch xxxx
+{
+    case .Asya : print("Asyayı seçtiniz")
+    case .Avrupa : print("Avrupyaı seçtiniz")
+    case .Afrika : print("Afrikayı seçtiniz")
+    case .Antarktika : print("Antarktikayı seçtiniz")
+    default: print("Tanımlanayan Kıta seçimi")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
